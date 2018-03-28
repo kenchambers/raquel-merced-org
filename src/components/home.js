@@ -33,7 +33,15 @@ class HomeComponent extends Component {
           strength={200}
         >
           <div style={{ height: '700px' }}>
-            <PercentImgText percent="Make a difference" text="" />
+            <span
+              style={{
+                fontSize: '6em',
+                fontFamily: 'Raleway',
+                color: 'white'
+              }}
+            >
+              Make A Difference
+            </span>
           </div>
         </Parallax>
 
