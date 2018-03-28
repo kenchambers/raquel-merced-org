@@ -23,7 +23,7 @@ class App extends Component {
   toggle = e => {
     // e.preventDefault();
     this.setState({
-      openMenu: true
+      openMenu: !this.state.openMenu
     });
   };
 
@@ -89,7 +89,17 @@ class App extends Component {
             <Route exact path="/donate" component={AppViews.Donate} />
             <Route exact path="/contact" component={AppViews.Contact} />
             <p className="App-intro">
-              To get started, edit <code>src/App.js</code> and save to reload.
+              <span
+                style={{
+                  fontFamily: 'Raleway',
+                  fontSize: '1em',
+                  color: 'black'
+                }}
+              >
+                To donate, please call us at 1-800-521-CARE within the U.S. (24
+                hours) or +1-404-681-2552 (M-F, 8:30 a.m.-6:00 p.m. ET). CARE is
+                a nonprofit 501(c)(3) public charity (tax ID# 13-1685039).
+              </span>
             </p>
           </div>
         </Router>

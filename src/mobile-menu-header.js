@@ -40,7 +40,7 @@ const MobileMenuHeader = ({ openMenu, showMenu, toggle }) => {
           ref={el => (this.LeftNav = el)}
           docked={false}
           open={openMenu}
-          onRequestChange={openMenu => this.setState({ openMenu })}
+          onRequestChange={toggle}
         >
           <Link to="/">
             <RaisedButton

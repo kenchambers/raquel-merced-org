@@ -4,6 +4,7 @@ import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
 import PaperImageText from './paper-img-text';
 import PercentImgText from './percent-img-text';
+
 class HomeComponent extends Component {
   classPropertyA = 'anything';
   classPropertyB = 99;
@@ -17,6 +18,12 @@ class HomeComponent extends Component {
       height: 350,
       backgroundColor: 'rgba(243, 196, 196, 0.22)'
     };
+
+    const socialMediaIconStyle = {
+      height: '10%',
+      width: '10%'
+    };
+
     return (
       <div>
         <Parallax
@@ -26,10 +33,7 @@ class HomeComponent extends Component {
           strength={200}
         >
           <div style={{ height: '700px' }}>
-            <PercentImgText
-              percent="Make a difference"
-              text="Calls have been made to suicide hotlines in January of 2018"
-            />
+            <PercentImgText percent="Make a difference" text="" />
           </div>
         </Parallax>
 
@@ -150,12 +154,48 @@ class HomeComponent extends Component {
           bgImage={require('../../src/assets/city-coast.jpeg')}
           strength={200}
         >
-          Blur transition from min to max
-          <div style={{ height: '200px' }} />
+          <h1>
+            <span
+              style={{
+                fontFamily: 'Raleway',
+                color: 'white',
+                fontSize: '3em'
+              }}
+            >
+              Connect with us
+            </span>
+          </h1>
         </Parallax>
         <Parallax strength={300}>
-          <div style={spacingBgColor}>
-            Use the background component for custom elements
+          <div style={{ height: 100 }}>
+            <div style={{ height: 100 }} className="container">
+              <div className="row" style={{ margin: '5%' }}>
+                <div
+                  style={socialMediaIconStyle}
+                  className="col-xs col-centered"
+                >
+                  <img src={require('../../src/assets/facebook.svg')} />
+                </div>
+                <div
+                  style={socialMediaIconStyle}
+                  className="col-xs col-centered"
+                >
+                  <img src={require('../../src/assets/instagram.svg')} />
+                </div>
+                <div
+                  style={socialMediaIconStyle}
+                  className="col-xs col-centered"
+                >
+                  <img src={require('../../src/assets/twitter.svg')} />
+                </div>
+                <div
+                  style={socialMediaIconStyle}
+                  className="col-xs col-centered"
+                >
+                  <img src={require('../../src/assets/linkedin.svg')} />
+                </div>
+              </div>
+            </div>
           </div>
           <Background className="custom-bg">
             <img src="../../src/assets/city-coast.jpeg" />

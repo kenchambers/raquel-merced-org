@@ -10,7 +10,13 @@ const PercentImgText = ({ percent, text }) => {
           <div className="row">
             <div className="col-xs">
               <h1>
-                <span style={{ color: 'white', fontSize: '2.9em' }}>
+                <span
+                  style={{
+                    fontFamily: 'Raleway',
+                    color: 'white',
+                    fontSize: '2.9em'
+                  }}
+                >
                   {percent}
                 </span>
               </h1>

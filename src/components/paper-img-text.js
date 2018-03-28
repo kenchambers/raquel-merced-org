@@ -15,6 +15,7 @@ const PaperImageText = ({ imageUrl, title, text }) => {
               <img
                 src={imageUrl}
                 style={{
+                  margin: '15%',
                   width: 200,
                   height: 100
                 }}
